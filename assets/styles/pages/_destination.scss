@@ -1,0 +1,12 @@
+.destination {
+  background-image: url('~/assets/images/destination/background-destination-mobile.jpg');
+
+  @media screen and (min-width: 35rem) {
+    background-position: center center;
+    background-image: url('~/assets/images/destination/background-destination-tablet.jpg');
+  }
+
+  @media screen and (min-width: 45rem) {
+    background-image: url('~/assets/images/destination/background-destination-desktop.jpg');
+  }
+}
