@@ -10,3 +10,30 @@
     background-image: url('~/assets/images/home/background-home-desktop.jpg');
   }
 }
+
+.hero {
+  gap: 6em;
+  margin-top: 56px;
+}
+
+@media (min-width: 35em) {
+  .hero {
+    gap: none;
+  }
+}
+
+@media (min-width: 45em) {
+  .hero {
+    padding-bottom: max(6rem, 20vh);
+    align-items: end;
+    margin-top: 250px;
+  }
+
+  .hero > *:first-child {
+    grid-column: 2;
+  }
+
+  .hero > *:last-child {
+    grid-column: 3;
+  }
+}
