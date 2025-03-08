@@ -22,7 +22,7 @@
         class="navigation underline-indicators flex"
       >
         <li v-for="link in navLinks" :key="link.title">
-          <NuxtLink exact-active-class="active" class="ff-sans-cond uppercase text-white letter-spacing-2" :href="link.path">
+          <NuxtLink exact-active-class="active" class="ff-sans-cond uppercase text-white letter-spacing-2" :to="link.path">
             <span aria-hidden="true">{{ link.id }}</span>{{ link.title }}
           </NuxtLink>
         </li>

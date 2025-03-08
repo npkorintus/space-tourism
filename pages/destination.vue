@@ -1,11 +1,7 @@
 <template>
-  <div>
-    <h1>destination</h1>
-    <p v-if="!data">Loading...</p>
-    <!-- <pre v-else>{{ data }}</pre> -->
-     <p v-else>
-      <p v-for="item in data">{{ item.name }}</p>
-     </p>
+  <div class="grid-container content flow">
+    <h1 class="numbered-title"><span aria-hidden="true">01</span> Pick your destination</h1>
+    <DestinationList v-if="data" :destinations="data" />
   </div>
 </template>
 
@@ -36,7 +32,6 @@ export default {
     catch (error) {
       console.log(error);
     }
-    console.log(this.destinations)
   }
 }
 </script>
