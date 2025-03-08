@@ -17,6 +17,10 @@ export default {
     onUnmounted(() => {
       document.body.classList.remove(routeName);
     })
+
+    useHead({
+      title: 'Space Tourism | Crew',
+    })
   },
   data() {
     return {

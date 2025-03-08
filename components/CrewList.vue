@@ -14,7 +14,7 @@
       :tabindex="activeTab === index ? '0' : '-1'"
       @click="setActiveTab(index)"
     >
-    <span class="sr-only">The {{ crewMember.role }}</span>
+      <span class="sr-only">The {{ crewMember.role }}</span>
     </button>
   </div>
 
@@ -42,8 +42,8 @@
     :id="`${crewMember.name}-image`"
     v-show="activeTab === index"
   >
-  <source :srcset="crewMember.images.webp" type="image/webp">
-  <img :src="crewMember.images.png" :alt="`photo of ${crewMember.name}`">
+    <source :srcset="crewMember.images.webp" type="image/webp">
+    <img :src="crewMember.images.png" :alt="`photo of ${crewMember.name}`">
   </picture>
 </template>
 

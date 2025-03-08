@@ -21,11 +21,14 @@
         :data-visible="isMenuOpen"
         class="navigation underline-indicators flex"
       >
-        <li v-for="link in navLinks" :key="link.title">
-          <NuxtLink exact-active-class="active" class="ff-sans-cond uppercase text-white letter-spacing-2" :to="link.path">
+        <!-- <li v-for="link in navLinks" :key="link.title" >
+          <NuxtLink activeClass="active" class="ff-sans-cond uppercase text-white letter-spacing-2" :to="link.path">
             <span aria-hidden="true">{{ link.id }}</span>{{ link.title }}
           </NuxtLink>
-        </li>
+        </li> -->
+        <NuxtLink v-for="link in navLinks" exact-active-class="active" class="ff-sans-cond uppercase text-white letter-spacing-2" :to="link.path">
+          <li><span aria-hidden="true">{{ link.id }}</span>{{ link.title }}</li>
+        </NuxtLink>
       </ul>
     </nav>
   </header>
