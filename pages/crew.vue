@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <h1>crew</h1>
+  <div class="grid-container content flow">
+    <h1 class="numbered-title"><span aria-hidden="true">01</span> Meet your crew</h1>
+    <CrewList v-if="data" :crew="data" />
   </div>
 </template>
 
@@ -16,6 +17,21 @@ export default {
     onUnmounted(() => {
       document.body.classList.remove(routeName);
     })
+  },
+  data() {
+    return {
+      data: null
+    }
+  },
+  async mounted() {
+    try {
+      const response = await fetch('/data.json');
+      const data = await response.json();
+      this.data = data.crew;
+    }
+    catch (error) {
+      console.log(error);
+    }
   }
 }
 </script>
