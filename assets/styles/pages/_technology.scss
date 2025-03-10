@@ -9,4 +9,97 @@
   @media screen and (min-width: 45rem) {
     background-image: url('~/assets/images/technology/background-technology-desktop.jpg');
   }
+
+  .content {
+    --flow-space: 2rem;
+    padding: 0;
+    grid-template-areas:
+      'title'
+      'image'
+      'tabs'
+      'content';
+  }
+
+  .content > picture {
+    grid-area: image;
+    border-bottom: 1px solid hsl(var(--clr-white) / .1);
+  }
+
+  .content > .number-indicators {
+    grid-area: tabs;
+
+    button {
+      width: 3rem;
+      height: 3rem;
+      padding: 0;
+      background-color: transparent;
+      border: 1px solid hsl(var(--clr-white) / .5);
+
+      &:hover {
+        border: 1px solid hsl(var(--clr-white));
+      }
+
+      &[aria-selected="true"] {
+        background-color: hsl(var(--clr-white));
+        color: hsl(var(--clr-dark));
+      }
+    }
+  }
+
+  .content > .tech-details {
+    grid-area: content;
+    padding-inline: 1rem;
+  }
+
+  .tech-details h2 {
+    color: hsl(var(--clr-white) / .5);
+  }
+
+  @media screen and (min-width: 35em) {
+    .numbered-title {
+      justify-self: start;
+      margin-top: 2rem;
+    }
+
+    .content {
+      padding-bottom: 0;
+      grid-template-columns: auto;
+      grid-template-areas:
+        '. title. '
+        'image image image'
+        '. tabs. '
+        '. content .';
+    }
+
+    .content>.dot-indicators {
+      justify-self: start;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .content {
+      justify-items: end;
+      grid-template-columns: minmax(0rem, 1fr) minmax(0rem, 5rem) minmax(0, 32rem) minmax(0rem, 4fr);
+      grid-template-areas:
+        ". title title image"
+        ". tabs content image"
+        ". tabs content image";
+    }
+
+    .content > .number-indicators {
+      flex-direction: column;
+
+      button {
+        width: 5rem;
+        height: 5rem;
+        padding: 0;
+      }
+    }
+
+    .content > picture {
+      grid-column: span 2;
+      align-self: center;
+      max-width: 100%;
+    }
+  }
 }

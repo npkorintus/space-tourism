@@ -9,68 +9,68 @@
   @media screen and (min-width: 45rem) {
     background-image: url('~/assets/images/crew/background-crew-desktop.jpg');
   }
-}
-
-.content {
-  --flow-space: 2rem;
-  grid-template-areas:
-    'title'
-    'image'
-    'tabs'
-    'content';
-}
-
-.content > picture {
-  grid-area: image;
-  max-width: 60%;
-  border-bottom: 1px solid hsl(var(--clr-white) / .1);
-}
-
-.content > .dot-indicators {
-  grid-area: tabs;
-}
-
-.content > .crew-details {
-  grid-area: content;
-}
-
-.crew-details h2 {
-  color: hsl(var(--clr-white) / .5);
-}
-
-@media screen and (min-width: 35em) {
-  .numbered-title {
-    justify-self: start;
-    margin-top: 2rem;
-  }
 
   .content {
-    padding-bottom: 0;
+    --flow-space: 2rem;
     grid-template-areas:
       'title'
-      'content'
+      'image'
       'tabs'
-      'image';
+      'content';
   }
 
-  .content>.dot-indicators {
-    justify-self: start;
-  }
-}
-
-@media screen and (min-width: 45em) {
-  .content {
-    grid-template-columns: minmax(1rem, 1fr) minmax(0, 37rem) minmax(0, 23rem) minmax(1rem, 1fr);
-    justify-items: start;
-    grid-template-areas:
-      '. title title .'
-      '. content image .'
-      '. tabs image .';
+  .content > picture {
+    grid-area: image;
+    max-width: 60%;
+    border-bottom: 1px solid hsl(var(--clr-white) / .1);
   }
 
-  .content>picture {
-    grid-column: span 2;
-    align-self: end;
-    max-width: 90%;
+  .content > .dot-indicators {
+    grid-area: tabs;
+  }
+
+  .content > .crew-details {
+    grid-area: content;
+  }
+
+  .crew-details h2 {
+    color: hsl(var(--clr-white) / .5);
+  }
+
+  @media screen and (min-width: 35em) {
+    .numbered-title {
+      justify-self: start;
+      margin-top: 2rem;
+    }
+
+    .content {
+      padding-bottom: 0;
+      grid-template-areas:
+        'title'
+        'content'
+        'tabs'
+        'image';
+    }
+
+    .content>.dot-indicators {
+      justify-self: start;
+    }
+  }
+
+  @media screen and (min-width: 45em) {
+    .content {
+      grid-template-columns: minmax(1rem, 1fr) minmax(0, 37rem) minmax(0, 23rem) minmax(1rem, 1fr);
+      justify-items: start;
+      grid-template-areas:
+        '. title title .'
+        '. content image .'
+        '. tabs image .';
+    }
+
+    .content>picture {
+      grid-column: span 2;
+      align-self: end;
+      max-width: 90%;
+    }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="grid-container content flow">
-    <h1 class="numbered-title"><span aria-hidden="true">01</span> Meet your crew</h1>
+    <h1 class="numbered-title"><span aria-hidden="true">02</span> Meet your crew</h1>
     <CrewList v-if="data" :crew="data" />
   </div>
 </template>

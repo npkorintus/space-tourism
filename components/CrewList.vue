@@ -33,7 +33,7 @@
       <h2 class="fs-600 ff-serif uppercase">{{ crewMember.role }}</h2>
       <p class="fs-700 uppercase ff-serif">{{ crewMember.name }}</p>
     </header>
-    <p>{{ crewMember.bio }}</p>
+    <p class="text-accent">{{ crewMember.bio }}</p>
   </article>
 
   <picture
