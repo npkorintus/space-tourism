@@ -1,75 +1,56 @@
-# Nuxt Minimal Starter
+# 🪐 Space Tourism Website
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A fully responsive, multi-page landing website for a fictional space tourism company. Built with **Vue**, **Nuxt.js**, and **SCSS**, the project focuses on accessibility, clean design, and strong performance. Designed based on Figma mockups and deployed via **Netlify**.
 
-## Setup
+---
 
-Make sure to install dependencies:
+## 🚀 Features
 
-```bash
-# npm
-npm install
+- Multi-page layout with dynamic routing using Nuxt.js
+- Mocked API data via a local `data.json` file
+- Fully responsive design for desktop, tablet, and mobile
+- Accessibility-focused: WCAG & ADA compliant
+- Smooth page transitions and optimized asset loading
+- Continuous deployment through Netlify + Git integration
 
-# pnpm
-pnpm install
+---
 
-# yarn
-yarn install
+## 🛠️ Tech Stack
 
-# bun
-bun install
-```
+- **Framework:** Vue 3 / Nuxt.js
+- **Styling:** SCSS
+- **Deployment:** Netlify
+- **Design Source:** Figma
 
-## Development Server
+---
 
-Start the development server on `http://localhost:3000`:
+## ⚙️ Setup & Installation
 
-```bash
-# npm
-npm run dev
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/space-tourism.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd space-tourism
+   ```
+3. Install dependencies:
+    ``` bash
+    npm install
+    ```
+4. Start the local development server:
+    ``` bash
+    npm run dev
+    ```
+5. Visit [```localhost:3000```](http://localhost:3000) to view the app locally.
 
-# pnpm
-pnpm dev
+## 🌐 Deployment
 
-# yarn
-yarn dev
+Deployed with [Netlify](https://www.netlify.com/) using continuous deployment.  
+Simply push changes to the main branch to trigger a live rebuild.
 
-# bun
-bun run dev
-```
+## 🧩 Future Improvements
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Add animations for page transitions using Framer Motion
+- Integrate a real API to replace mocked data
+- Include localization for multilingual support
