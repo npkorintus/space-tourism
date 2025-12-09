@@ -28,7 +28,7 @@ A fully responsive, multi-page landing website for a fictional space tourism com
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/space-tourism.git
+   git clone https://github.com/npkorintus/space-tourism.git
    ```
 2. Navigate to the project folder:
    ```bash
